@@ -21,14 +21,58 @@ class HomePageState extends State<HomePage> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: ListView(
           children: [
             Center(
               child: CustomSwitch(),
             ),
             Container(
               height: 150,
+            ),
+            Container(
+              width: 50,
+              height: 50,
+              color: Colors.green,
+            ),
+            Container(
+              width: 150,
+              height: 50,
+              color: Colors.black,
+            ),
+            Container(
+              width: 50,
+              height: 50,
+              color: Colors.green,
+            ),
+            Container(
+              width: 50,
+              height: 50,
+              color: Colors.green,
+            ),
+            Container(
+              width: 150,
+              height: 50,
+              color: Colors.black,
+            ),
+            Container(
+              width: 50,
+              height: 50,
+              color: Colors.green,
+            ),
+            Container(
+              width: 50,
+              height: 50,
+              color: Colors.green,
+            ),
+            Container(
+              width: 150,
+              height: 50,
+              color: Colors.black,
+            ),
+            Container(
+              width: 50,
+              height: 50,
+              color: Colors.green,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
