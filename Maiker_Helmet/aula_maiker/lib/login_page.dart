@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 import 'home_page.dart';
@@ -25,6 +27,9 @@ class _LoginPageState extends State<LoginPage> {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                //Coloquei mesma imagem porque meu estava dando erro nos dominios das imagens!
+                Image.network(
+                    'https://img.icons8.com/cute-clipart/64/000000/login-rounded-right.png'),
                 TextField(
                   onChanged: (text) => email = text,
                   keyboardType: TextInputType.emailAddress,
@@ -51,10 +56,7 @@ class _LoginPageState extends State<LoginPage> {
                     onPressed: () {
                       if (email == 'clayton@gmail.com' && senha == '123') {
                         print('Login feito com sucesso!');
-                        Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => HomePage()));
+                        Navigator.pushReplacementNamed(context, "/home");
                       } else {
                         print('Login errado!');
                       }
