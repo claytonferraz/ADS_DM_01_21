@@ -18,12 +18,7 @@ class HomePageState extends State<HomePage> {
         title: Text('App Aula Maiker'),
       ),
       body: Center(
-        child: Switch(
-          value: AppController.instance.isDark,
-          onChanged: (value) {
-            AppController.instance.changeTheme();
-          },
-        ),
+        child: CustomSwitch(),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
@@ -31,6 +26,18 @@ class HomePageState extends State<HomePage> {
         },
         child: Icon(Icons.add_circle),
       ),
+    );
+  }
+}
+
+class CustomSwitch extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Switch(
+      value: AppController.instance.isDark,
+      onChanged: (value) {
+        AppController.instance.changeTheme();
+      },
     );
   }
 }
