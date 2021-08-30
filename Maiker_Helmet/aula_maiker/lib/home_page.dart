@@ -15,8 +15,7 @@ class HomePageState extends State<HomePage> {
       height: 150,
       width: 150,
       color: Colors.blueGrey,
-      child: Align(
-        alignment: Alignment.bottomCenter,
+      child: Center(
         child: Container(
           height: 50,
           width: 50,
