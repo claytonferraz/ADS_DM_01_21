@@ -16,6 +16,7 @@ class HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text('App Aula Maiker'),
+        actions: [CustomSwitch()],
       ),
       body: Center(
         child: CustomSwitch(),
