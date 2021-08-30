@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:aula_maiker/app_controller.dart';
+import 'app_controller.dart';
+import 'login_page.dart';
 import 'home_page.dart';
 
 class AppWidget extends StatelessWidget {
@@ -14,7 +15,7 @@ class AppWidget extends StatelessWidget {
                   brightness: AppController.instance.isDark
                       ? Brightness.dark
                       : Brightness.light),
-              home: HomePage());
+              home: LoginPage());
         });
   }
 }
