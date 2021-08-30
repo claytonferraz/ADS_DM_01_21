@@ -14,11 +14,15 @@ class HomePageState extends State<HomePage> {
     var container = Container(
       height: 150,
       width: 150,
-      color: Colors.red,
-      child: Container(
-        height: 50,
-        width: 50,
-        color: Colors.green,
+      color: Colors.blueGrey,
+      child: Align(
+        alignment: Alignment.bottomCenter,
+        child: Container(
+          height: 50,
+          width: 50,
+          color: Colors.green,
+          child: Icon(Icons.remove_circle_outline),
+        ),
       ),
     );
 
