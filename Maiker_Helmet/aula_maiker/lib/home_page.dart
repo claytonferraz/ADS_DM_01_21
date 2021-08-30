@@ -9,27 +9,21 @@ class HomePage extends StatefulWidget {
 
 class HomePageState extends State<HomePage> {
   int counter = 0;
+  bool isDark = false;
   @override
   Widget build(BuildContext context) {
-    var container = Container(
-      height: 150,
-      width: 150,
-      color: Colors.blueGrey,
-      child: Center(
-        child: Container(
-          height: 50,
-          width: 50,
-          color: Colors.green,
-          child: Icon(Icons.remove_circle_outline),
-        ),
-      ),
-    );
-
     return Scaffold(
       appBar: AppBar(
         title: Text('App Aula Maiker'),
       ),
-      body: container,
+      body: Center(
+        child: Switch(
+          value: isDark,
+          onChanged: (value) {
+            print(value);
+          },
+        ),
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() => counter++);
