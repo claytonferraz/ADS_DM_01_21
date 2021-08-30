@@ -15,15 +15,11 @@ class HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: Text('App Aula Maiker'),
       ),
-      body: Center(
-          child: GestureDetector(
-              child: Text(
-                'Click $counter',
-                style: TextStyle(fontSize: 50),
-              ),
-              onTap: () {
-                setState(() => counter--);
-              })),
+      body: Container(
+        height: 50,
+        width: 50,
+        color: Colors.blue,
+      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() => counter++);
