@@ -11,15 +11,22 @@ class HomePageState extends State<HomePage> {
   int counter = 0;
   @override
   Widget build(BuildContext context) {
+    var container = Container(
+      height: 150,
+      width: 150,
+      color: Colors.red,
+      child: Container(
+        height: 50,
+        width: 50,
+        color: Colors.green,
+      ),
+    );
+
     return Scaffold(
       appBar: AppBar(
         title: Text('App Aula Maiker'),
       ),
-      body: Container(
-        height: 50,
-        width: 50,
-        color: Colors.blue,
-      ),
+      body: container,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           setState(() => counter++);
