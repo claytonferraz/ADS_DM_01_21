@@ -18,8 +18,17 @@ class HomePageState extends State<HomePage> {
         title: Text('App Aula Maiker'),
         actions: [CustomSwitch()],
       ),
-      body: Center(
-        child: CustomSwitch(),
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Center(
+              child: CustomSwitch(),
+            ),
+          ],
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
