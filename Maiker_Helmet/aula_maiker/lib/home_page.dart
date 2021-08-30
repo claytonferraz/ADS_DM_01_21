@@ -1,3 +1,4 @@
+import 'package:aula_maiker/app_controller.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -18,11 +19,9 @@ class HomePageState extends State<HomePage> {
       ),
       body: Center(
         child: Switch(
-          value: isDark,
+          value: AppController.instance.isDark,
           onChanged: (value) {
-            setState(() {
-              isDark = value;
-            });
+            AppController.instance.changeTheme();
           },
         ),
       ),
