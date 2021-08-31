@@ -18,9 +18,33 @@ class HomePageState extends State<HomePage> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [Center(child: CustomSwitch())]),
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Center(child: CustomSwitch()),
+          Container(
+            height: 50,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                width: 50,
+                height: 50,
+                color: Colors.green,
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                color: Colors.black,
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                color: Colors.green,
+              )
+            ],
+          ),
+        ]),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add_circle),
