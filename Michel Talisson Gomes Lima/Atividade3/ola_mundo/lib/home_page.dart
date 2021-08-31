@@ -18,10 +18,71 @@ class HomePageState extends State<HomePage> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        child: ListView(//mainAxisAlignment: MainAxisAlignment.center,
+            children: [
           Center(child: CustomSwitch()),
           Container(
+            height: 150,
+          ),
+          Container(
+            width: 50,
             height: 50,
+            color: Colors.green,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.green,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.green,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.green,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.green,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.green,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.green,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.green,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.green,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.green,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.green,
+          ),
+          Container(
+            width: 50,
+            height: 50,
+            color: Colors.green,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
