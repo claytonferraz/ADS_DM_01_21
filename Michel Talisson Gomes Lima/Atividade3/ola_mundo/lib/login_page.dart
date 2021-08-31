@@ -24,6 +24,8 @@ class _LoginPageState extends State<LoginPage> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
+                      Image.network(
+                          'http://img.icons8.com/cute-clipart/64/000000/login-rounded-right.png'),
                       TextField(
                         onChanged: (text) => email = text,
                         keyboardType: TextInputType.emailAddress,
@@ -51,8 +53,7 @@ class _LoginPageState extends State<LoginPage> {
                             if (email == 'micheltalisson@gmail.com' &&
                                 senha == '123') {
                               print('Login Correto');
-                              Navigator.of(context).push(MaterialPageRoute(
-                                  builder: (context) => HomePage()));
+                              Navigator.of(context).pushNamed('/home');
                             } else {
                               print('login errado');
                             }
