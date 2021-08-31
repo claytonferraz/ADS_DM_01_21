@@ -13,16 +13,10 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('App ADS')),
-      body: Center(
-        child: GestureDetector(
-          child: Text('Click: $counter', style: TextStyle(fontSize: 50)),
-          onTap: () {
-            setState(() {
-              counter--;
-              //print(counter);
-            });
-          },
-        ),
+      body: Container(
+        height: 50,
+        width: 50,
+        color: Colors.red,
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add_circle),
