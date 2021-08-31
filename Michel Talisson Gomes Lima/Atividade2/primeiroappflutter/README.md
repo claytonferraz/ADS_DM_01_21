@@ -1,11 +1,10 @@
-# primeiroappflutter
+Segue a atividade a ser feita com o Flutter. Envie pelo GITHUB.
 
-A new flutter module project.
+1) Vá no site: Cod3R
 
-## Getting Started
+2) Faça sua matricula no curso;
 
-For help getting started with Flutter, view our online
-[documentation](https://flutter.dev/).
+3) Envie o código fonte da primeira parte do curso pelo GitHub:Aplicação Cadastro Usuário..
 
-For instructions integrating Flutter modules to your existing applications,
-see the [add-to-app documentation](https://flutter.dev/docs/development/add-to-app).
+
+
