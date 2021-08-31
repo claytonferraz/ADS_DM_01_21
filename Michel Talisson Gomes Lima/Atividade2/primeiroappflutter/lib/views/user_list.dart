@@ -1,23 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:primeiroappflutter/components/user_tile.dart';
-import 'package:primeiroappflutter/data/dummy_users.dart';
 import 'package:primeiroappflutter/provider/users.dart';
 import 'package:primeiroappflutter/routes/app_routes.dart';
 import 'package:provider/provider.dart';
-import 'package:primeiroappflutter/models/user.dart';
 
 class UserList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Users users = Provider.of(context);
+
     return Scaffold(
-      appBar: AppBar(title: Text('Lista de Usuários'), actions: <Widget>[
-        IconButton(
+      appBar: AppBar(
+        title: Text('Lista de Usuários'),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.add),
             onPressed: () {
               Navigator.of(context).pushNamed(AppRoutes.USER_FORM);
             },
-            icon: Icon(Icons.add))
-      ]),
+          ),
+        ],
+      ),
       body: ListView.builder(
         itemCount: users.count,
         itemBuilder: (ctx, i) => UserTile(users.byIndex(i)),

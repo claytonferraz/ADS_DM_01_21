@@ -1,11 +1,13 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+
 import 'package:primeiroappflutter/data/dummy_users.dart';
 import 'package:primeiroappflutter/models/user.dart';
 
 class Users with ChangeNotifier {
-  final Map<String?, User> _items = {...DUMMY_USERS};
+  final Map<String, User> _items = {...DUMMY_USERS};
+
   List<User> get all {
     return [..._items.values];
   }
@@ -22,27 +24,31 @@ class Users with ChangeNotifier {
     if (user == null) {
       return;
     }
+
     if (user.id != null &&
-        //user.id.trim().isNotEmpty &&
+        user.id.trim().isNotEmpty &&
         _items.containsKey(user.id)) {
       _items.update(
-          user.id,
-          (_) => User(
-              id: user.id,
-              name: user.name,
-              email: user.email,
-              avatarUrl: user.avatarUrl));
+        user.id,
+        (_) => User(
+          id: user.id,
+          name: user.name,
+          email: user.email,
+          avatarUrl: user.avatarUrl,
+        ),
+      );
     } else {
       final id = Random().nextDouble().toString();
       _items.putIfAbsent(
-          '1000',
-          () => User(
-              id: '1000',
-              name: 'Teste',
-              email: 'Teste@Teste.com',
-              avatarUrl: ''));
+        id,
+        () => User(
+          id: id,
+          name: user.name,
+          email: user.email,
+          avatarUrl: user.avatarUrl,
+        ),
+      );
     }
-
     notifyListeners();
   }
 
