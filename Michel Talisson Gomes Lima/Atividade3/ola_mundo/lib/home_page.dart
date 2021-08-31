@@ -15,8 +15,12 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('App ADS'), actions: [CustomSwitch()]),
-      body: Center(
-        child: CustomSwitch(),
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [Center(child: CustomSwitch())]),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add_circle),
