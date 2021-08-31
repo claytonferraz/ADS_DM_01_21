@@ -20,71 +20,11 @@ class HomePageState extends State<HomePage> {
         height: double.infinity,
         child: ListView(
             //mainAxisAlignment: MainAxisAlignment.center,
-            scrollDirection: Axis.horizontal,
+            //scrollDirection: Axis.horizontal,
             children: [
               Center(child: CustomSwitch()),
               Container(
                 height: 150,
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                color: Colors.green,
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                color: Colors.green,
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                color: Colors.green,
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                color: Colors.green,
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                color: Colors.green,
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                color: Colors.green,
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                color: Colors.green,
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                color: Colors.green,
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                color: Colors.green,
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                color: Colors.green,
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                color: Colors.green,
-              ),
-              Container(
-                width: 50,
-                height: 50,
-                color: Colors.green,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,

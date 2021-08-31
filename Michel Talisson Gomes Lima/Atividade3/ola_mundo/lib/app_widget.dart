@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:olamundo/app_controller.dart';
 import 'package:olamundo/home_page.dart';
+import 'package:olamundo/login_page.dart';
 
 class AppWidget extends StatelessWidget {
   final String title;
@@ -16,7 +17,7 @@ class AppWidget extends StatelessWidget {
                   brightness: AppController.instance.isDark
                       ? Brightness.dark
                       : Brightness.light),
-              home: HomePage());
+              home: LoginPage());
         });
   }
 }
