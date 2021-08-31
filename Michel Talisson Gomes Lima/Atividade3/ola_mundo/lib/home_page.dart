@@ -18,11 +18,20 @@ class HomePageState extends State<HomePage> {
           child: Text('Click: $counter', style: TextStyle(fontSize: 50)),
           onTap: () {
             setState(() {
-              counter++;
-              print(counter);
+              counter--;
+              //print(counter);
             });
           },
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add_circle),
+        onPressed: () {
+          setState(() {
+            counter++;
+            //print(counter);
+          });
+        },
       ),
     );
   }
