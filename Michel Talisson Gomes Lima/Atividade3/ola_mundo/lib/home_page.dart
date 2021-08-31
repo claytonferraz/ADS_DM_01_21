@@ -18,76 +18,14 @@ class HomePageState extends State<HomePage> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        child: ListView(//mainAxisAlignment: MainAxisAlignment.center,
+        child: ListView(
+            //mainAxisAlignment: MainAxisAlignment.center,
+            scrollDirection: Axis.horizontal,
             children: [
-          Center(child: CustomSwitch()),
-          Container(
-            height: 150,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Container(
-            width: 50,
-            height: 50,
-            color: Colors.green,
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
+              Center(child: CustomSwitch()),
+              Container(
+                height: 150,
+              ),
               Container(
                 width: 50,
                 height: 50,
@@ -96,16 +34,80 @@ class HomePageState extends State<HomePage> {
               Container(
                 width: 50,
                 height: 50,
-                color: Colors.black,
+                color: Colors.green,
               ),
               Container(
                 width: 50,
                 height: 50,
                 color: Colors.green,
-              )
-            ],
-          ),
-        ]),
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                color: Colors.green,
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                color: Colors.green,
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                color: Colors.green,
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                color: Colors.green,
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                color: Colors.green,
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                color: Colors.green,
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                color: Colors.green,
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                color: Colors.green,
+              ),
+              Container(
+                width: 50,
+                height: 50,
+                color: Colors.green,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.green,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.black,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.green,
+                  )
+                ],
+              ),
+            ]),
       ),
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.add_circle),
