@@ -1,16 +1,8 @@
-# meuprojeto
+# 04 - Atividade Obrigatória - Projeto de uma aplicação com Flutter: 50 pontos
+Envie o seu projeto final de Desenvolvimento Mobile, enviar por GitHub. 
 
-A new Flutter project.
+1) Faça um aplicativo, com no mínimo 3 telas.
 
-## Getting Started
+2) O aluno escolhe o tema do aplicativo, seja uma loja, seja App de serviços. 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3) Atividade vale 50 pontos. 
